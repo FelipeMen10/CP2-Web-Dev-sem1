@@ -153,11 +153,27 @@ button{
 
 }
 .perguntas span{
+
     font-size: 25px;
 }
-#opcoes button{
-    font-weight: bold;
-    font-size: 18px;
+#respostas{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+#respostas button{
+    width: 40px;
+    border: 3px solid blue;
+}
+#respostas button:hover{
+    border: 3px solid black;
+}
+#opcoes{
+    font-size: 16px;
+    text-decoration: none;
+    gap: 3px;
+    justify-content: center;
+    display: flex;
 }
 footer{
     background-color: gray;
