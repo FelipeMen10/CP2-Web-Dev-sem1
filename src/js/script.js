@@ -20,10 +20,6 @@ function verificarInputs() {
 
   if (input1 === '' || input2 === '' || input3 === '') {
       alert('Por favor, preencha todos os inputs.');
-  } else {
-      window.open("quiz.html")
-      window.close("contato.html")
-  }
 }
 
 function mudarCor(){

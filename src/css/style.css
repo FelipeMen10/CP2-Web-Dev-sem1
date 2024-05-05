@@ -135,6 +135,30 @@ button{
 .btn-card:hover{
     border: 3px solid blueviolet;
 }
+#quiz{
+    background-color: rgb(174, 174, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.perguntas{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.perguntas span{
+    font-size: 25px;
+}
+#opcoes button{
+    font-weight: bold;
+    font-size: 18px;
+}
 footer{
     background-color: gray;
     color: white;
