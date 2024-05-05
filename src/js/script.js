@@ -13,14 +13,16 @@ function slideShow(){
 }
 slideShow();
 
-function validarForm(){
-  let nome = document.getElementById("#nome");
-  let email = document.getElementById("#email");
-  let telefone = document.getElementById("#telefone");
+function verificarInputs() {
+  var input1 = document.getElementById("nome").value;
+  var input2 = document.getElementById("email").value;
+  var input3 = document.getElementById("telefone").value;
 
-  if(nome == "" || email == "" || telefone == ""){
-    alert("Todos os espaços devem estar preenchidos!");
-    
+  if (input1 === '' || input2 === '' || input3 === '') {
+      alert('Por favor, preencha todos os inputs.');
+  } else {
+      window.open("quiz.html")
+      window.close("contato.html")
   }
 }
 
