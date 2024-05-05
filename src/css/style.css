@@ -54,14 +54,47 @@ a:hover{
     width: 20px;
     margin-right: 5px;
 }
+#sobre{
+    height: 600px;
+}
 #texto-sobre{
     font-size: 20px;
-    position: absolute;
-    top: 20%;
     margin: 20px;
+    margin-top: 50px;
     background-color: rgb(179, 179, 255);
     padding: 20px;
     border-radius: 10px;
+}
+#contato{
+    width: 100%;
+    background-color: rgb(185, 185, 255);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contato form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+#contato form input{
+    width: 50%;
+    padding: 3px;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+#contato form input:active{
+    border: 2px solid black;
+}
+button{
+    padding: 3px;
+    border: 2px solid blue;
+    background-color: white;
+    border-radius: 5px;
 }
 #produtos{
     width: 100%;

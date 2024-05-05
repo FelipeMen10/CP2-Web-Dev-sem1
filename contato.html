@@ -16,7 +16,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
             </ul>
         </div>
         <div id="login">
@@ -24,6 +23,17 @@
             <a href="login.html">Registrar-se ou Logar</a>
         </div>
     </header>
+    <section id="contato">
+        <form action="quiz.html" onsubmit="return validarForm()">
+            <p>Nome</p>
+            <input type="text" placeholder="Digite seu Nome:" id="nome">
+            <p>Email</p>
+            <input type="email" placeholder="Digite seu Email:" id="email">
+            <p>Telefone</p>
+            <input type="number" placeholder="Digite seu Telefone:" id="telefone">
+            <button onclick="validarForm()" id="validar">Enviar</button>
+        </form>
+    </section>
     <footer>
         <h5>@2024 - todos os direitos reservados</h5>
     </footer>
