@@ -14,11 +14,17 @@
         <div id="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
     </header>
+    <section id="sec-login">
+        <p><label for="usuario">Usuário(admin):</label></p>
+        <input id="usuario" type="text" placeholder="Digite o usúario:">
+        <p><label for="senha">Senha(12345):</label></p>
+        <input id="senha" type="text" placeholder="Digite a senha:">
+        <button onclick="verificarLogin()" id="validar">Logar</button>
+    </section>
+    
     <footer>
         <h5>@2024 - todos os direitos reservados</h5>
     </footer>
