@@ -146,6 +146,26 @@ button{
     padding-bottom: 50px;
     text-align: center;
 }
+button:active{
+    background-color: blue;
+    color: white;
+}
+#sec-login{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(185, 185, 255);
+}
+#sec-login input{
+    width: 60%;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
 .perguntas{
     display: flex;
     flex-direction: column;

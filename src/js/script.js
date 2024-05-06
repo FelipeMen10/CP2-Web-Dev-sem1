@@ -13,15 +13,34 @@ function slideShow(){
 }
 slideShow();
 
-function verificarInputs() {
+function verificarInputs(){
   var input1 = document.getElementById("nome").value;
   var input2 = document.getElementById("email").value;
   var input3 = document.getElementById("telefone").value;
 
   if (input1 === '' || input2 === '' || input3 === '') {
       alert('Por favor, preencha todos os inputs.');
+  }
 }
+var contador = 0;
 
+// Selecionando o botão correto
+var btncorreto = document.querySelector("#btn-correto");
+
+// Adicionando um ouvinte de evento de clique ao botão correto
+btncorreto.addEventListener("click", function() {
+  contador++;
+  console.log("Contador: " + contador); // Verificar se o contador está sendo incrementado corretamente
+});
+
+// Selecionando o botão de resultados
+var botao = document.querySelector("#btn-resultados");
+
+// Adicionando um ouvinte de evento de clique ao botão de resultados
+botao.addEventListener("click", function() {
+  // Exibindo o alerta na tela
+  alert("Contador: " + contador);
+});
 function mudarCor(){
   function mudar(numero){
       return(Math.random()* numero);
@@ -34,3 +53,18 @@ function mudarCor(){
       mudarCor();
   },3000)
   })
+
+  function verificarLogin(){
+    var input1 = document.getElementById("usuario").value;
+    var input2 = document.getElementById("senha").value;
+  
+    if (input1 === '' || input2 === '') {
+        alert('Por favor, preencha todos os inputs.');
+    } else if  (input1 === 'admin' || input2 === '12345'){
+      window.open("quiz.html")
+      window.close("login.html")
+    } 
+    else{
+      alert("Usuário ou Senha inválido")
+    }
+  }
